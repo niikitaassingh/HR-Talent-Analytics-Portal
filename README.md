@@ -1,121 +1,164 @@
+# HR Analytics Dashboard
+
+## 📌 Project Overview
+
+This project focuses on analyzing employee data to generate actionable HR insights. The dashboard helps HR teams monitor workforce trends, employee performance, attrition, recruitment effectiveness, and workforce demographics.
 
 ---
 
-## 📊 Key Metrics Overview
+## 📂 Project Structure
 
-### 👥 Workforce Summary
-- Total Employees: **1,470**
-- Male Employees: **882 (60%)**
-- Female Employees: **588 (40%)**
-- Active Employees: **1,353 (92%)**
-- At Risk Employees: **117 (8%)**
-
----
-
-### 📈 Promotion Analysis
-- Employees Due for Promotion: **229 (15.58%)**
-- Not Due for Promotion: **Majority workforce**
-
-👉 Indicates limited upward mobility in current structure.
-
----
-
-### 🏢 Job Level Distribution
-- Level 3 dominates with **63.95% workforce**
-- Level 2: **20.48%**
-- Level 1 & Senior levels: minimal distribution
-
-👉 Shows dependency on mid-level employees.
-
----
-
-### ⏳ Experience Distribution
-- Strong clusters at 5–10 years experience
-- Workforce is highly experienced and stable
-
----
-
-### ⚠️ Attrition / Risk Analysis
-- At Risk Employees: **117 (8%)**
-
-👉 Early warning group requiring HR intervention.
-
----
-
-## 📌 Key Insights
-
-- Workforce is **stable but structurally imbalanced**
-- Promotion pipeline is **limited**
-- Heavy dependency on **mid-level (Level 3) employees**
-- Strong retention but **8% risk segment exists**
-- Experience distribution shows **high maturity workforce**
-
----
-
-## 🎯 Business Impact
-
-This dashboard helps organizations:
-- Reduce employee attrition risk
-- Improve promotion planning
-- Optimize workforce structure
-- Build leadership pipeline
-- Improve employee engagement strategy
-
----
-
-## 🧠 Recommendations
-
-### 🔹 HR Strategy Improvements
-- Build structured career growth framework
-- Implement skill-based promotions
-- Strengthen leadership pipeline
-
-### 🔹 Attrition Reduction
-- Monitor 8% at-risk employees
-- Conduct engagement surveys
-- Introduce retention programs
-
-### 🔹 Workforce Optimization
-- Balance job level distribution
-- Reduce dependency on Level 3 workforce
-
----
-
-## 🛠️ Tools Used
-- Power BI / Excel (Dashboarding)
-- Python (Optional data processing)
-- SQL (Data extraction & analysis)
-- GitHub (Version control & portfolio)
-
----
-
-## 📷 Dashboard Preview
-> *(Add your Power BI screenshots here for better portfolio impact)*
-
----
-
-## 📈 Future Improvements
-- Predictive attrition model using Machine Learning
-- Automated HR reporting system
-- Real-time employee analytics dashboard
-- AI-based promotion recommendation system
-
----
-
-## 👨‍💼 Author
-**HR Data Analyst Portfolio Project**  
-Built for demonstrating **real-world HR analytics & business insights skills**
-
----
-
-## ⭐ Note
-This project focuses on transforming raw HR data into **actionable business intelligence for strategic decision-making**.
+```
+HR_ANALYST/
+│
+├── dashboard/
+│   └── Power BI dashboard files (.pbix)
+│
+├── data/
+│   ├── raw_data.xlsx
+│   └── cleaned_data.csv
+│
+├── images/
+│   ├── dashboard_overview.png
+│   └── reports_screenshots.png
+│
+├── insights/
+│   └── business_insights.md
+│
+├── measurements/
+│   └── DAX_measures.txt
+│
+├── sql/
+│   └── hr_queries.sql
+│
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
-If you want next level upgrade, I can also help you:
-✔ Add **badges (Power BI, Python, SQL, GitHub stars style)**  
-✔ Make this look like **Deloitte / McKinsey case study README**  
-✔ Add **dashboard images + GitHub portfolio homepage design**  
-✔ Or create a **LinkedIn post for this project (very important for jobs)**
+## 🎯 Business Objective
+
+The objective of this project is to analyze employee-related data and provide meaningful insights to improve:
+
+* Employee retention
+* Workforce planning
+* Recruitment efficiency
+* Employee satisfaction
+* Department performance
+* Diversity and inclusion initiatives
+
+---
+
+## 📊 Key KPIs
+
+* Total Employees
+* Active Employees
+* Attrition Rate (%)
+* Retention Rate (%)
+* Average Salary
+* Average Age
+* Gender Distribution
+* Department-wise Employee Count
+* Employee Performance Rating
+* Recruitment Cost
+* Hiring Trend Analysis
+
+---
+
+## 🛠️ Tools & Technologies
+
+* Python
+* Pandas
+* NumPy
+* SQL
+* Power BI
+* Excel
+* DAX
+
+---
+
+## 📈 Dashboard Features
+
+### Workforce Overview
+
+* Total Employees
+* Gender Ratio
+* Department Distribution
+* Job Role Distribution
+
+### Attrition Analysis
+
+* Attrition by Department
+* Attrition by Age Group
+* Attrition by Gender
+* Attrition by Job Role
+
+### Salary Analysis
+
+* Average Salary by Department
+* Salary Distribution
+* Salary vs Performance
+
+### Recruitment Analysis
+
+* Hiring Trends
+* Recruitment Cost Analysis
+* New Joiners by Month
+
+### Performance Analysis
+
+* Employee Performance Ratings
+* Top Performing Departments
+* Performance Distribution
+
+---
+
+## 🔍 Key Insights
+
+1. Identified departments with the highest attrition rates.
+2. Analyzed salary patterns across job roles.
+3. Evaluated workforce diversity metrics.
+4. Tracked recruitment trends and hiring costs.
+5. Compared employee performance across departments.
+
+---
+
+## 📋 Sample SQL Analysis
+
+* Employee Count by Department
+* Monthly Hiring Trends
+* Attrition Analysis
+* Average Salary by Department
+* Top Performing Employees
+* Gender Diversity Analysis
+
+---
+
+## 📷 Dashboard Preview
+
+Dashboard screenshots are available in the `images/` folder.
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository.
+2. Open Power BI Desktop.
+3. Load the dataset from the `data/` folder.
+4. Refresh the data model.
+5. Open the dashboard file from the `dashboard/` folder.
+
+---
+
+## 📧 Author
+
+Nikita Singh
+
+**Skills:** Power BI, SQL, Python, Excel, DAX, Data Analytics
+
+---
+
+## ⭐ Project Outcome
+
+This HR Analytics Dashboard provides a data-driven approach to workforce management, helping HR teams make informed decisions regarding employee retention, recruitment, and performance optimization.

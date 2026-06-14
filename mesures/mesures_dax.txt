@@ -1,0 +1,38 @@
+% Active workers = DIVIDE([Active workers],[Total Emp],0)
+
+% Due for promotion = DIVIDE([Due for promotion],[Total Emp],0)
+
+% Due for retirment = DIVIDE([Due for retrenchment],[Total Emp],0)
+
+% High emp rating = DIVIDE([High emp rating],[Total Emp],0)
+
+% Not due for promotion = DIVIDE([Not Due],[Total Emp],0)
+
+% Low emp rating = DIVIDE([Low emp rating],[Total Emp],0)
+
+Active workers = CALCULATE([Total Emp],'HR Analytics Data'[Retirement]="on service")
+
+Due for promotion = IF(ISBLANK(CALCULATE([Total Emp],'HR Analytics Data'[Promotion status]="due for promotion")),0,
+CALCULATE([Total Emp],'HR Analytics Data'[Promotion status]="due for promotion"))
+
+
+Due for retrenchment = IF(ISBLANK( CALCULATE([Total Emp],'HR Analytics Data'[Retirement]="due for retirement")),"0", CALCULATE([Total Emp],
+'HR Analytics Data'[Retirement]="due for retirement"))
+
+Female = CALCULATE([Total Emp],'HR Analytics Data'[Gender]="female")
+
+High emp rating = CALCULATE([Total Emp],'HR Analytics Data'[Performance Rating]="High ratings")
+
+Low emp rating = CALCULATE([Total Emp],'HR Analytics Data'[Performance Rating]="low ratings")
+
+Male = CALCULATE([Total Emp],'HR Analytics Data'[Gender]="male")
+
+Female = CALCULATE([Total Emp],'HR Analytics Data'[Gender]="female")
+
+Male % = DIVIDE([Male],[Total Emp],0)
+
+Female % = DIVIDE([Female],[Total Emp],0)
+
+Total Emp = COUNTROWS('HR Analytics Data')
+
+Not Due = CALCULATE([Total Emp],'HR Analytics Data'[Promotion status]="not due")
